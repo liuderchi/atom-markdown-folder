@@ -99,6 +99,7 @@ module.exports = MarkdownFolder =
       when 6 then result = /^#\s|^##\s|^###\s|^####\s|^#####\s|^######\s/
     return result
 
+  # NOTE core function
   folderer: (action, startrow) ->
     editor = atom.workspace.getActiveTextEditor()
 
@@ -213,6 +214,7 @@ module.exports = MarkdownFolder =
           editor.setCursorBufferPosition(new Point(startrow, 0))
         break
       row++
+      break if row > editor.getLastBufferRow()
 
   toggleallfenced: ->
     editor = atom.workspace.getActiveTextEditor()

@@ -17,9 +17,9 @@ bill-to: &id001
     given  : Chris
     family : Dumarsa
 ```
-<!-- 
+<!--
 # h1-2 fake
-h1-2-text 
+h1-2-text
 -->
 # h1-2
 
